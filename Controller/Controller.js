@@ -55,7 +55,7 @@ const updateBook = async (req, res) => {
       message: "Book updated",
     });
   } catch (error) {
-    res.json({
+    res.staus(500).json({
       status: "Fail",
       message: error,
     });
